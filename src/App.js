@@ -1,9 +1,11 @@
-import './App.css';
+import "./App.css";
+import Login from "./components/Login";
 
 function App() {
   return (
     <div className="App">
-      <h1>Innovance Case</h1>
+      <h1>Expense Tracker</h1>
+      <Login />
     </div>
   );
 }
