@@ -1,9 +1,14 @@
 import React from "react";
+import Credentials from "./Credentials";
+import LoginBtn from "./LoginBtn";
+import Header from "./Header";
 
 function Home() {
   return (
     <div>
-      <h1>This is the homepage.</h1>
+      <Header />
+      <Credentials />
+      <LoginBtn />
     </div>
   );
 }
