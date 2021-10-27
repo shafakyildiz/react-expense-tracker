@@ -1,19 +1,14 @@
-import React, { useContext } from "react";
+import React from "react";
 import TransactionList from "./TransactionList";
 import AddTransaction from "./AddTransaction";
 import IncomeExpenses from "./IncomeExpenses";
 import { GlobalProvider } from "../context/GlobalState";
-import { GlobalContext } from "../context/GlobalState";
+import Header from "./Header";
 
 function Balance() {
-  const { transactions } = useContext(GlobalContext);
-  const amounts = transactions.map((transaction) => transaction.amount);
-  console.log("amounts is ", amounts);
-
-  const total = amounts.reduce((acc, item) => (acc += item), 0).toFixed(2);
-  console.log("total is ", total);
   return (
     <GlobalProvider>
+      <Header />
       <IncomeExpenses />
       <TransactionList />
       <AddTransaction />
