@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import TransactionList from "./TransactionList";
 import AddTransaction from "./AddTransaction";
-import Header from "./Header";
 import IncomeExpenses from "./IncomeExpenses";
 import { GlobalProvider } from "../context/GlobalState";
 import { GlobalContext } from "../context/GlobalState";
