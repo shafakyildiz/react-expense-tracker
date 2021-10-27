@@ -4,7 +4,7 @@ import { GlobalContext } from "../context/GlobalState";
 function Transaction({ transaction }) {
   const { deleteTransaction } = useContext(GlobalContext);
 
-  const sign = transaction.amout < 0 ? "-" : "+";
+  const sign = transaction.amount < 0 ? "-" : "+";
   return (
     <li
       key={transaction.id}

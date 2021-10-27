@@ -8,9 +8,10 @@ function AddTransaction() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-
+    setAmount(0);
+    setText("");
     const newTransaction = {
-      id: Math.floor(Math.random * 10000000),
+      id: Math.floor(Math.random() * 10000000),
       text,
       amount: +amount, // parsing it to number from string
     };
@@ -24,6 +25,7 @@ function AddTransaction() {
         <div className="form-control">
           <label htmlFor="text">Text</label>
           <input
+            required
             type="text"
             value={text}
             onChange={(e) => setText(e.target.value)}
