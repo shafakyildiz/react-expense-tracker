@@ -3,7 +3,24 @@ import React from "react";
 function About() {
   return (
     <div>
-      <p style={{ display: "flex", textAlign: "center" }}>
+      <h1
+        style={{
+          display: "flex",
+          textAlign: "center",
+          justifyContent: "center",
+          fontSize: "36px",
+          fontWeight: "bold",
+        }}
+      >
+        About
+      </h1>
+      <p
+        style={{
+          display: "flex",
+          textAlign: "center",
+          justifyContent: "center",
+        }}
+      >
         Aliqua occaecat proident quis enim mollit tempor sunt occaecat
         adipisicing dolore pariatur esse ea esse. Ullamco velit anim occaecat
         pariatur sunt nisi nisi excepteur amet fugiat elit laboris. Est laboris
