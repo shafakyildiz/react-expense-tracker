@@ -15,8 +15,6 @@ function Balance() {
   return (
     <GlobalProvider>
       <IncomeExpenses />
-      <h4>Your Balance</h4>
-      <h1>${total}</h1>
       <TransactionList />
       <AddTransaction />
     </GlobalProvider>

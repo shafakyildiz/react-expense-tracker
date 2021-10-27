@@ -7,24 +7,30 @@ function IncomeExpenses() {
 
   const income = amounts
     .filter((item) => item > 0)
-    .reduce((acc, item) => (acc += item), 0)
-    .toFixed(2);
-
+    .reduce((acc, item) => (acc += item), 0);
   const outcome =
     amounts.filter((item) => item < 0).reduce((acc, item) => (acc += item), 0) *
-    -(1).toFixed(2);
+    -1;
 
+  const total = income - outcome;
   return (
-    <div className="inc-exp-container">
-      <div>
-        <h4>Income</h4>
-        <p className="money plus">+${income}</p>
+    <>
+      {" "}
+      <div className="inc-exp-container">
+        <div>
+          <h4>Income</h4>
+          <p className="money plus">+${income}</p>
+        </div>
+        <div>
+          <h4>Expense</h4>
+          <p className="money minus">-${outcome}</p>
+        </div>
       </div>
       <div>
-        <h4>Expense</h4>
-        <p className="money minus">-${outcome}</p>
+        <h1>Your Balance</h1>
+        <h1>${total.toFixed(2)}</h1>
       </div>
-    </div>
+    </>
   );
 }
 
