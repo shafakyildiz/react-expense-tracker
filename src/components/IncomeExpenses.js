@@ -27,8 +27,22 @@ function IncomeExpenses() {
         </div>
       </div>
       <div>
-        <h1>Your Balance</h1>
-        <h1>${total.toFixed(2)}</h1>
+        <h1
+          style={{
+            fontSize: "24px",
+            fontWeight: "bold",
+          }}
+        >
+          Your Balance
+        </h1>
+        <h1
+          style={{
+            fontSize: "18px",
+            fontWeight: "bold",
+          }}
+        >
+          ${total.toFixed(2)}
+        </h1>
       </div>
     </>
   );
